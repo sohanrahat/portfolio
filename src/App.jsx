@@ -159,7 +159,7 @@ const Portfolio = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gray-50 text-gray-800">
+    <div className="min-h-screen text-gray-800" style={{backgroundColor: '#a2bafa'}}>
       {/* Subtle Background Pattern */}
       <div className="fixed inset-0 opacity-5">
         <div className="absolute inset-0" style={{
@@ -171,7 +171,7 @@ const Portfolio = () => {
       <nav className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'bg-white/90 backdrop-blur-md shadow-sm' : 'bg-transparent'}`}>
         <div className="container mx-auto px-6 py-4">
           <div className="flex justify-between items-center">
-            <h1 className="text-2xl font-bold text-gray-800">
+            <h1 className="text-2xl font-bold text-gray-700">
               M N Sohan
             </h1>
 
@@ -181,7 +181,7 @@ const Portfolio = () => {
                 <button
                   key={item}
                   onClick={() => scrollToSection(item.toLowerCase())}
-                  className="text-gray-600 hover:text-gray-900 transition-colors duration-300 font-medium cursor-pointer"
+                  className="text-gray-700 hover:text-gray-900 transition-colors duration-300 font-medium cursor-pointer"
                 >
                   {item}
                 </button>
@@ -205,7 +205,7 @@ const Portfolio = () => {
                   <button
                     key={item}
                     onClick={() => scrollToSection(item.toLowerCase())}
-                    className="text-gray-600 hover:text-gray-900 transition-colors duration-300 font-medium text-left"
+                    className="text-gray-700 hover:text-gray-900 transition-colors duration-300 font-medium text-left"
                   >
                     {item}
                   </button>
@@ -225,7 +225,7 @@ const Portfolio = () => {
             </div>
           </div>
 
-          <h1 className="text-4xl sm:text-6xl lg:text-7xl font-bold mb-4 text-gray-900">
+          <h1 className="text-4xl sm:text-6xl lg:text-7xl font-bold mb-4 text-gray-800">
             MERN Stack Developer
           </h1>
           <p className="text-xl md:text-2xl text-gray-600 mb-8">
@@ -265,12 +265,12 @@ const Portfolio = () => {
       </section>
 
       {/* About Me Section */}
-      <section id="about" className="py-20 px-6 bg-white">
+      <section id="about" className="py-20 px-6" style={{backgroundColor: '#b8c8fb'}}>
         <div className="container mx-auto max-w-4xl">
-          <h2 className="text-4xl font-bold text-center mb-12 text-gray-900">
+          <h2 className="text-4xl font-bold text-center mb-12 text-gray-800">
             About Me
           </h2>
-          <AnimatedCard className="bg-gray-50 rounded-2xl p-8 shadow-sm">
+          <AnimatedCard className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-white/20">
             <p className="text-lg leading-relaxed mb-6 text-gray-700 text-start">
               Hey there! I am a junior front-end web developer based in Dhaka, Bangladesh, specializing in building robust and user-friendly web applications.
 
@@ -295,7 +295,7 @@ const Portfolio = () => {
       {/* Skills Section */}
       <section id="skills" className="py-20 px-6">
         <div className="container mx-auto max-w-6xl">
-          <h2 className="text-4xl font-bold text-center mb-12 text-gray-900">
+          <h2 className="text-4xl font-bold text-center mb-12 text-gray-800">
             Technical Skills
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -322,14 +322,14 @@ const Portfolio = () => {
       </section>
 
       {/* Education Section */}
-      <section id="education" className="py-20 px-6 bg-white">
+      <section id="education" className="py-20 px-6" style={{backgroundColor: '#b8c8fb'}}>
         <div className="container mx-auto max-w-4xl">
-          <h2 className="text-4xl font-bold text-center mb-12 text-gray-900">
+          <h2 className="text-4xl font-bold text-center mb-12 text-gray-800">
             Education
           </h2>
           <div className="space-y-6">
             {education.map((edu, idx) => (
-              <AnimatedCard key={idx} className="bg-gray-50 rounded-2xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
+              <AnimatedCard key={idx} className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-white/20">
                 <div className="flex items-start gap-4">
                   <GraduationCap className="text-blue-600 mt-1" size={24} />
                   <div className="flex-1">
@@ -348,7 +348,7 @@ const Portfolio = () => {
       {/* Bootcamps Section */}
       <section id="bootcamps" className="py-20 px-6">
         <div className="container mx-auto max-w-4xl">
-          <h2 className="text-4xl font-bold text-center mb-12 text-gray-900">
+          <h2 className="text-4xl font-bold text-center mb-12 text-gray-800">
             Bootcamps & Certifications
           </h2>
           <div className="space-y-6">
@@ -370,14 +370,14 @@ const Portfolio = () => {
       </section>
 
       {/* Projects Section */}
-      <section id="projects" className="py-20 px-6 bg-white">
+      <section id="projects" className="py-20 px-6" style={{backgroundColor: '#b8c8fb'}}>
         <div className="container mx-auto max-w-6xl">
-          <h2 className="text-4xl font-bold text-center mb-12 text-gray-900">
+          <h2 className="text-4xl font-bold text-center mb-12 text-gray-800">
             Featured Projects
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {projects.map((project) => (
-              <AnimatedCard key={project.id} className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300">
+              <AnimatedCard key={project.id} className="rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300" style={{backgroundColor: '#cdd8fc'}}>
                 <img
                   src={project.image}
                   alt={project.title}
@@ -408,7 +408,7 @@ const Portfolio = () => {
       {/* Experience Section */}
       <section id="experience" className="py-20 px-6">
         <div className="container mx-auto max-w-4xl">
-          <h2 className="text-4xl font-bold text-center mb-12 text-gray-900">
+          <h2 className="text-4xl font-bold text-center mb-12 text-gray-800">
             Experience
           </h2>
           <div className="space-y-6">
@@ -432,12 +432,12 @@ const Portfolio = () => {
 
 
       {/* Contact Section */}
-      <section id="contact" className="py-20 px-6 bg-white">
+      <section id="contact" className="py-20 px-6" style={{backgroundColor: '#b8c8fb'}}>
         <div className="container mx-auto max-w-4xl">
-          <h2 className="text-4xl font-bold text-center mb-12 text-gray-900">
+          <h2 className="text-4xl font-bold text-center mb-12 text-gray-800">
             Get In Touch
           </h2>
-          <AnimatedCard className="bg-gray-50 rounded-2xl p-8 shadow-sm">
+          <AnimatedCard className="rounded-2xl p-8 shadow-sm" style={{backgroundColor: '#cdd8fc'}}>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 text-center">
               <a href="mailto:mnsohan.dev@gmail.com" className="group">
                 <FaEnvelope className="mx-auto mb-3 text-gray-500 group-hover:scale-110 transition-transform duration-300" size={32} />
