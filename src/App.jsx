@@ -14,6 +14,7 @@ import {
 import sohan from '../src/assets/Sohan.jpg';
 import { DiGithubBadge, DiJavascript } from 'react-icons/di';
 import { RiClaudeLine } from 'react-icons/ri';
+import { IoLogoFirebase } from 'react-icons/io5';
 
 const Portfolio = () => {
   const [activeProject, setActiveProject] = useState(null);
@@ -57,6 +58,7 @@ const Portfolio = () => {
     Tools: [
       { name: 'Github', icon: DiGithubBadge, color: 'text-orange-600' },
       { name: 'AWS', icon: FaAws, color: 'text-orange-500' },
+      { name: 'firebase', icon: IoLogoFirebase, color: 'text-orange-500' },
       { name: 'Vercel', icon: SiVercel, color: 'text-black' },
       { name: 'VS Code', icon: VscVscode, color: 'text-blue-600' },
       { name: 'Figma', icon: SiFigma, color: 'text-orange-500' },
