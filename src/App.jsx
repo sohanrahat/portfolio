@@ -179,7 +179,7 @@ const Portfolio = () => {
                 <button
                   key={item}
                   onClick={() => scrollToSection(item.toLowerCase())}
-                  className="text-gray-600 hover:text-gray-900 transition-colors duration-300 font-medium cursor-po"
+                  className="text-gray-600 hover:text-gray-900 transition-colors duration-300 font-medium cursor-pointer"
                 >
                   {item}
                 </button>
@@ -219,7 +219,7 @@ const Portfolio = () => {
         <div className="text-center z-10">
           <div className="mb-8 relative inline-block">
             <div className="w-36 h-36 sm:w-48 sm:h-48 mx-auto rounded-full overflow-hidden border-4 border-gray-200 shadow-xl">
-              <img src={sohan} />
+              <img src={sohan} alt="M N Sohan profile picture" />
             </div>
           </div>
 
