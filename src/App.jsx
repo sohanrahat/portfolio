@@ -159,7 +159,7 @@ const Portfolio = () => {
   ];
 
   return (
-    <div className="min-h-screen text-gray-800" style={{backgroundColor: '#a2bafa'}}>
+    <div className="min-h-screen text-gray-800" style={{ backgroundColor: '#a2bafa' }}>
       {/* Subtle Background Pattern */}
       <div className="fixed inset-0 opacity-5">
         <div className="absolute inset-0" style={{
@@ -265,7 +265,7 @@ const Portfolio = () => {
       </section>
 
       {/* About Me Section */}
-      <section id="about" className="py-20 px-6" style={{backgroundColor: '#b8c8fb'}}>
+      <section id="about" className="py-20 px-6" style={{ backgroundColor: '#b8c8fb' }}>
         <div className="container mx-auto max-w-4xl">
           <h2 className="text-4xl font-bold text-center mb-12 text-gray-800">
             About Me
@@ -322,7 +322,7 @@ const Portfolio = () => {
       </section>
 
       {/* Education Section */}
-      <section id="education" className="py-20 px-6" style={{backgroundColor: '#b8c8fb'}}>
+      <section id="education" className="py-20 px-6" style={{ backgroundColor: '#b8c8fb' }}>
         <div className="container mx-auto max-w-4xl">
           <h2 className="text-4xl font-bold text-center mb-12 text-gray-800">
             Education
@@ -370,14 +370,14 @@ const Portfolio = () => {
       </section>
 
       {/* Projects Section */}
-      <section id="projects" className="py-20 px-6" style={{backgroundColor: '#b8c8fb'}}>
+      <section id="projects" className="py-20 px-6" style={{ backgroundColor: '#b8c8fb' }}>
         <div className="container mx-auto max-w-6xl">
           <h2 className="text-4xl font-bold text-center mb-12 text-gray-800">
             Featured Projects
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {projects.map((project) => (
-              <AnimatedCard key={project.id} className="rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300" style={{backgroundColor: '#cdd8fc'}}>
+              <AnimatedCard key={project.id} className="rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300" style={{ backgroundColor: '#cdd8fc' }}>
                 <img
                   src={project.image}
                   alt={project.title}
@@ -437,22 +437,28 @@ const Portfolio = () => {
           <h2 className="text-4xl font-bold text-center mb-12 text-gray-800">
             Get In Touch
           </h2>
-          <AnimatedCard className="rounded-2xl p-8 shadow-sm" style={{backgroundColor: '#cdd8fc'}}>
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 text-center">
-              <a href="mailto:mnsohan.dev@gmail.com" className="group">
-                <FaEnvelope className="mx-auto mb-3 text-gray-500 group-hover:scale-110 transition-transform duration-300" size={32} />
-                <h3 className="font-semibold mb-1 text-gray-900">Email</h3>
-                <p className="text-gray-600">mnsohan.dev@gmail.com</p>
+          <AnimatedCard className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-white/20">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
+              <a href="mailto:mnsohan.dev@gmail.com" className="group p-6 rounded-xl hover:bg-blue-50 transition-all duration-300 border border-transparent hover:border-blue-200 text-center">
+                <div className="w-16 h-16 mx-auto mb-4 bg-blue-100 rounded-full flex items-center justify-center group-hover:bg-blue-500 transition-colors duration-300">
+                  <FaEnvelope className="text-blue-600 group-hover:text-white transition-colors duration-300" size={24} />
+                </div>
+                <h3 className="font-bold mb-2 text-slate-800 text-lg">Email</h3>
+                <p className="text-slate-600 text-sm font-medium break-words">mnsohan.dev@gmail.com</p>
               </a>
-              <a href="tel:+8801714069155" className="group">
-                <FaPhone className="mx-auto mb-3 text-gray-500 group-hover:scale-110 transition-transform duration-300" size={32} />
-                <h3 className="font-semibold mb-1 text-gray-900">Phone</h3>
-                <p className="text-gray-600">+88 01714069155</p>
+              <a href="tel:+8801714069155" className="group p-6 rounded-xl hover:bg-green-50 transition-all duration-300 border border-transparent hover:border-green-200 text-center">
+                <div className="w-16 h-16 mx-auto mb-4 bg-green-100 rounded-full flex items-center justify-center group-hover:bg-green-500 transition-colors duration-300">
+                  <FaPhone className="text-green-600 group-hover:text-white transition-colors duration-300" size={24} />
+                </div>
+                <h3 className="font-bold mb-2 text-slate-800 text-lg">Phone</h3>
+                <p className="text-slate-600 text-sm font-medium">+88 01714069155</p>
               </a>
-              <a href="https://wa.me/8801714069155" className="group">
-                <FaWhatsapp className="mx-auto mb-3 text-gray-500 group-hover:scale-110 transition-transform duration-300" size={32} />
-                <h3 className="font-semibold mb-1 text-gray-900">WhatsApp</h3>
-                <p className="text-gray-600">+88 01714069155</p>
+              <a href="https://wa.me/8801714069155" className="group p-6 rounded-xl hover:bg-emerald-50 transition-all duration-300 border border-transparent hover:border-emerald-200 text-center">
+                <div className="w-16 h-16 mx-auto mb-4 bg-emerald-100 rounded-full flex items-center justify-center group-hover:bg-emerald-500 transition-colors duration-300">
+                  <FaWhatsapp className="text-emerald-600 group-hover:text-white transition-colors duration-300" size={24} />
+                </div>
+                <h3 className="font-bold mb-2 text-slate-800 text-lg">WhatsApp</h3>
+                <p className="text-slate-600 text-sm font-medium">+88 01714069155</p>
               </a>
             </div>
           </AnimatedCard>
