@@ -56,7 +56,7 @@ const Portfolio = () => {
       { name: 'REST APIs', icon: VscPlug, color: 'text-purple-500' },
     ],
     Tools: [
-      { name: 'Github', icon: DiGithubBadge, color: 'text-orange-600' },
+      { name: 'Github', icon: DiGithubBadge, color: 'text-black' },
       { name: 'AWS', icon: FaAws, color: 'text-orange-500' },
       { name: 'firebase', icon: IoLogoFirebase, color: 'text-orange-500' },
       { name: 'Vercel', icon: SiVercel, color: 'text-black' },
