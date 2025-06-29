@@ -225,10 +225,10 @@ const Portfolio = () => {
             </div>
           </div>
 
-          <h1 className="text-4xl sm:text-6xl lg:text-7xl font-bold mb-4 text-gray-800">
+          <h1 className="text-4xl sm:text-6xl lg:text-7xl font-bold mb-4 text-white">
             MERN Stack Developer
           </h1>
-          <p className="text-xl md:text-2xl text-gray-600 mb-8">
+          <p className="text-xl md:text-2xl text-gray-700 mb-8">
             Front-end developer blending creativity with code. Passionate about design, JS, and AI. Based in Dhaka. <br /> Open to remote roles.
           </p>
 
@@ -249,7 +249,7 @@ const Portfolio = () => {
                 href={link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-3 shadow-md hover:shadow-lg transition-all duration-300 hover:-translate-y-1 text-gray-600 hover:text-gray-900"
+                className="p-3 shadow-md hover:shadow-lg transition-all duration-300 hover:-translate-y-1 text-gray-700 hover:text-gray-900"
               >
                 <Icon size={24} />
               </a>
@@ -267,7 +267,7 @@ const Portfolio = () => {
       {/* About Me Section */}
       <section id="about" className="py-20 px-6" style={{ backgroundColor: '#b8c8fb' }}>
         <div className="container mx-auto max-w-4xl">
-          <h2 className="text-4xl font-bold text-center mb-12 text-gray-800">
+          <h2 className="text-4xl font-bold text-center mb-12 text-gray-700">
             About Me
           </h2>
           <AnimatedCard className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-white/20">
@@ -278,16 +278,7 @@ const Portfolio = () => {
 
               Driven by curiosity and a commitment to continuous learning, I combine creative thinking with technical problem-solving and am ready to contribute to a forward-thinking team.
             </p>
-            {/* <p className="text-lg leading-relaxed mb-6 text-gray-700">
-              I specialize in building modern web applications using cutting-edge technologies. Whether it's crafting
-              pixel-perfect frontends with React or architecting robust backend systems with Node.js, I approach every
-              project with enthusiasm and attention to detail.
-            </p> */}
-            {/* <p className="text-lg leading-relaxed text-gray-700">
-              When I'm not coding, you'll find me exploring new hiking trails, experimenting with photography, or
-              diving into the latest tech blogs. I believe in continuous learning and love sharing knowledge with
-              the developer community through open-source contributions and tech talks.
-            </p> */}
+
           </AnimatedCard>
         </div>
       </section>
@@ -295,7 +286,7 @@ const Portfolio = () => {
       {/* Skills Section */}
       <section id="skills" className="py-20 px-6">
         <div className="container mx-auto max-w-6xl">
-          <h2 className="text-4xl font-bold text-center mb-12 text-gray-800">
+          <h2 className="text-4xl font-bold text-center mb-12 text-gray-700">
             Technical Skills
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -324,7 +315,7 @@ const Portfolio = () => {
       {/* Education Section */}
       <section id="education" className="py-20 px-6" style={{ backgroundColor: '#b8c8fb' }}>
         <div className="container mx-auto max-w-4xl">
-          <h2 className="text-4xl font-bold text-center mb-12 text-gray-800">
+          <h2 className="text-4xl font-bold text-center mb-12 text-gray-700">
             Education
           </h2>
           <div className="space-y-6">
@@ -333,7 +324,7 @@ const Portfolio = () => {
                 <div className="flex items-start gap-4">
                   <GraduationCap className="text-blue-600 mt-1" size={24} />
                   <div className="flex-1">
-                    <h3 className="text-xl font-bold mb-1 text-gray-900">{edu.degree}</h3>
+                    <h3 className="text-xl font-bold mb-1 text-gray-700">{edu.degree}</h3>
                     <p className="text-gray-600 mb-2">{edu.institution}</p>
                     <p className="text-sm text-gray-500 mb-2">{edu.year}</p>
                     <p className="text-gray-700">{edu.description}</p>
@@ -348,7 +339,7 @@ const Portfolio = () => {
       {/* Bootcamps Section */}
       <section id="bootcamps" className="py-20 px-6">
         <div className="container mx-auto max-w-4xl">
-          <h2 className="text-4xl font-bold text-center mb-12 text-gray-800">
+          <h2 className="text-4xl font-bold text-center mb-12 text-gray-700">
             Bootcamps & Certifications
           </h2>
           <div className="space-y-6">
@@ -357,7 +348,7 @@ const Portfolio = () => {
                 <div className="flex items-start gap-4">
                   <Award className="text-purple-600 mt-1" size={24} />
                   <div className="flex-1">
-                    <h3 className="text-xl font-bold mb-1 text-gray-900">{bootcamp.degree}</h3>
+                    <h3 className="text-xl font-bold mb-1 text-gray-700">{bootcamp.degree}</h3>
                     <p className="text-gray-600 mb-2">{bootcamp.institution}</p>
                     <p className="text-sm text-gray-500 mb-2">{bootcamp.year}</p>
                     <p className="text-gray-700">{bootcamp.description}</p>
@@ -372,29 +363,29 @@ const Portfolio = () => {
       {/* Projects Section */}
       <section id="projects" className="py-20 px-6" style={{ backgroundColor: '#b8c8fb' }}>
         <div className="container mx-auto max-w-6xl">
-          <h2 className="text-4xl font-bold text-center mb-12 text-gray-800">
+          <h2 className="text-4xl font-bold text-center mb-12 text-gray-700">
             Featured Projects
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {projects.map((project) => (
-              <AnimatedCard key={project.id} className="rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300" style={{ backgroundColor: '#cdd8fc' }}>
+              <AnimatedCard key={project.id} className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl hover:-translate-y-2 border border-gray-200 transition-all duration-500 hover:scale-105">
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-48 object-cover"
+                  className="w-full h-48 object-cover hover:scale-110 transition-transform duration-500"
                 />
                 <div className="p-6">
                   <h3 className="text-xl font-bold mb-3 text-gray-900">{project.title}</h3>
                   <div className="flex flex-wrap gap-2 mb-4">
                     {project.tech.slice(0, 3).map((tech) => (
-                      <span key={tech} className="text-xs bg-gray-200 px-2 py-1 rounded-full text-gray-700">
+                      <span key={tech} className="text-xs bg-gray-100 text-gray-700 px-3 py-1 rounded-full font-medium hover:bg-gray-200 transition-all duration-300">
                         {tech}
                       </span>
                     ))}
                   </div>
                   <button
                     onClick={() => setActiveProject(project)}
-                    className="bg-gray-900 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-gray-800 transition-colors duration-300"
+                    className="bg-gray-700 text-white px-6 py-3 rounded-lg text-sm font-medium hover:bg-gray-800 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
                   >
                     View Details
                   </button>
@@ -408,16 +399,16 @@ const Portfolio = () => {
       {/* Experience Section */}
       <section id="experience" className="py-20 px-6">
         <div className="container mx-auto max-w-4xl">
-          <h2 className="text-4xl font-bold text-center mb-12 text-gray-800">
+          <h2 className="text-4xl font-bold text-center mb-12 text-gray-700">
             Experience
           </h2>
           <div className="space-y-6">
             {experience.map((exp, idx) => (
               <AnimatedCard key={idx} className="bg-white rounded-2xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
                 <div className="flex items-start gap-4">
-                  <Briefcase className="text-green-600 mt-1" size={24} />
+                  <Briefcase className="text-gray-700 mt-1" size={24} />
                   <div className="flex-1">
-                    <h3 className="text-xl font-bold mb-1 text-gray-900">{exp.position}</h3>
+                    <h3 className="text-xl font-bold mb-1 text-gray-700">{exp.position}</h3>
                     <p className="text-gray-600 mb-2">{exp.company}</p>
                     <p className="text-sm text-gray-500 mb-2">{exp.period}</p>
                     <p className="text-gray-700">{exp.description}</p>
@@ -432,9 +423,9 @@ const Portfolio = () => {
 
 
       {/* Contact Section */}
-      <section id="contact" className="py-20 px-6" style={{backgroundColor: '#b8c8fb'}}>
+      <section id="contact" className="py-20 px-6" style={{ backgroundColor: '#b8c8fb' }}>
         <div className="container mx-auto max-w-4xl">
-          <h2 className="text-4xl font-bold text-center mb-12 text-gray-800">
+          <h2 className="text-4xl font-bold text-center mb-12 text-gray-700">
             Get In Touch
           </h2>
           <AnimatedCard className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-white/20">
