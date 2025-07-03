@@ -233,16 +233,16 @@ const Portfolio = () => {
             Front-end developer blending creativity with code. Passionate about design, JS, and AI. Based in Dhaka. <br /> Open to remote roles.
           </p>
 
-          <button className="bg-gray-600 text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-gray-800 transform transition-all duration-300 shadow-lg flex items-center gap-2 mx-auto">
+          {/* <button className="bg-gray-600 text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-gray-800 transform transition-all duration-300 shadow-lg flex items-center gap-2 mx-auto">
             <Download size={20} />
             Download Resume
-          </button>
+          </button> */}
 
           {/* Social Links */}
           <div className="flex justify-center gap-4 mt-8">
             {[
               { icon: FaGithubSquare, link: 'https://github.com/sohanrahat' },
-              { icon: FaLinkedin, link: 'https://linkedin.com' }
+              { icon: FaLinkedin, link: 'https://linkedin.com/in/sohan-dev' }
 
             ].map(({ icon: Icon, link }, idx) => (
               <a
