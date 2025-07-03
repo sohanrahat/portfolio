@@ -7,7 +7,7 @@ import {
 } from 'react-icons/fa';
 import {
   SiReact, SiTailwindcss, SiHtml5, SiCss3,
-  SiNodedotjs, SiExpress, SiMongodb,
+  SiNextdotjs, SiNodedotjs, SiExpress, SiMongodb,
   SiVercel, SiFigma, SiGooglegemini,
   SiAdobeillustrator
 } from 'react-icons/si';
@@ -43,6 +43,7 @@ const Portfolio = () => {
   const skills = {
     Frontend: [
       { name: 'React', icon: SiReact, color: 'text-sky-400' },
+      { name: 'Next.js', icon: SiNextdotjs, color: 'text-black' },
       { name: 'Tailwind CSS', icon: SiTailwindcss, color: 'text-cyan-500' },
       { name: 'HTML5', icon: SiHtml5, color: 'text-orange-600' },
       { name: 'CSS3', icon: SiCss3, color: 'text-blue-600' },
