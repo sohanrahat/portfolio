@@ -1,2 +1,11 @@
 @import "tailwindcss";
 @plugin "daisyui";
+
+/* Force light mode - override browser dark theme */
+html {
+  color-scheme: light !important;
+}
+
+* {
+  color-scheme: light !important;
+}
