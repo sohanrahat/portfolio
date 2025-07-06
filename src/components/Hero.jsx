@@ -1,29 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { ChevronDown } from 'lucide-react';
-import { FaGithubSquare, FaLinkedin } from 'react-icons/fa';
+import { FaGithubSquare, FaLinkedin, FaFilePdf } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 import sohan from '../assets/Sohan.jpg';
 
 const Hero = ({ scrollToSection }) => {
-  const [displayedText, setDisplayedText] = useState('');
-  const [isTyping, setIsTyping] = useState(true);
   const [imageLoaded, setImageLoaded] = useState(false);
-  const fullText = 'MERN Stack Developer';
-
-  useEffect(() => {
-    let index = 0;
-    const typingInterval = setInterval(() => {
-      if (index < fullText.length) {
-        setDisplayedText(fullText.slice(0, index + 1));
-        index++;
-      } else {
-        setIsTyping(false);
-        clearInterval(typingInterval);
-      }
-    }, 100);
-
-    return () => clearInterval(typingInterval);
-  }, []);
   return (
     <section id="home" className="min-h-screen flex items-center justify-center relative px-6">
       {/* Subtle Dot Pattern */}
@@ -59,8 +41,7 @@ const Hero = ({ scrollToSection }) => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
         >
-          {displayedText}
-          {isTyping && <span className="animate-pulse">|</span>}
+          MERN Stack Developer
         </motion.h1>
         <motion.p
           className="text-lg text-white mb-4 italic"
@@ -122,8 +103,9 @@ const Hero = ({ scrollToSection }) => {
         >
           {[
             { icon: FaGithubSquare, link: 'https://github.com/sohanrahat', label: 'GitHub Profile' },
-            { icon: FaLinkedin, link: 'https://linkedin.com/in/sohan-dev', label: 'LinkedIn Profile' }
-          ].map(({ icon: Icon, link, label }, idx) => (
+            { icon: FaLinkedin, link: 'https://linkedin.com/in/sohan-dev', label: 'LinkedIn Profile' },
+            { icon: FaFilePdf, link: '/Sohan_Dev_Resume.pdf', label: 'Download Resume', download: true }
+          ].map(({ icon: Icon, link, label, download }, idx) => (
             <a
               key={idx}
               href={link}
@@ -131,6 +113,7 @@ const Hero = ({ scrollToSection }) => {
               rel="noopener noreferrer"
               aria-label={label}
               className="p-4 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 text-white hover:text-gray-200 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-900 rounded-lg bg-gray-800/30 backdrop-blur-sm"
+              {...(download ? { download: true } : {})}
             >
               <Icon size={36} />
             </a>
