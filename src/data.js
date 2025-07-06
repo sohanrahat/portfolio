@@ -41,36 +41,36 @@ export const skills = {
 export const projects = [
   {
     id: 1,
-    title: 'E-Commerce Platform',
-    image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&q=80',
-    tech: ['React', 'Node.js', 'MongoDB', 'Stripe', 'Redux'],
-    description: 'A full-featured e-commerce platform with user authentication, product management, shopping cart, and payment integration.',
-    liveDemo: 'https://example-ecommerce.com',
-    github: 'https://github.com/yourusername/ecommerce',
-    challenges: 'Implementing secure payment processing and optimizing database queries for large product catalogs.',
-    improvements: 'Adding recommendation engine and implementing microservices architecture.'
+    title: 'MIYAWAKI FOREST HOME',
+    image: 'https://i.ibb.co/k2zsVGWG/Miyawaki-Forest-Home.png',
+    tech: ['React', 'JavaScript', 'CSS3', 'Vercel'],
+    description: 'Open web application that generates personalized Miyawaki forest plans based on land area and plant species selection. Features interactive forest planning system with automated calculations and downloadable layout plans.',
+    liveDemo: 'https://miyawaki-forest-home.vercel.app/',
+    github: 'https://github.com/sohanrahat/Miyawaki-Forest-Home',
+    challenges: 'Implementing automated calculation algorithms for optimal tree quantities and planting layouts while ensuring accurate budget estimation.',
+    improvements: 'Adding 3D visualization of forest layouts and integration with local nursery APIs for real-time plant availability.'
   },
   {
     id: 2,
-    title: 'Task Management App',
-    image: 'https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=800&q=80',
-    tech: ['Next.js', 'TypeScript', 'PostgreSQL', 'Prisma', 'TailwindCSS'],
-    description: 'A collaborative task management application with real-time updates, team workspaces, and productivity analytics.',
-    liveDemo: 'https://example-taskapp.com',
-    github: 'https://github.com/yourusername/taskapp',
-    challenges: 'Implementing real-time synchronization across multiple users and maintaining data consistency.',
-    improvements: 'Adding AI-powered task prioritization and mobile app development.'
+    title: 'PLANT PLANET',
+    image: 'https://i.ibb.co/7tJvpV9d/Plant-Planet.png',
+    tech: ['React', 'Firebase', 'Node.js', 'JavaScript', 'CSS3'],
+    description: 'Comprehensive plant tracking platform with integrated e-commerce marketplace for gardening enthusiasts. Features secure authentication, plant management system, and integrated marketplace for buying and selling plants.',
+    liveDemo: 'https://plantplanet-14750.web.app/',
+    github: 'https://github.com/sohanrahat/simple-plant-tracker',
+    challenges: 'Creating a seamless integration between plant tracking functionality and e-commerce features while maintaining secure user authentication.',
+    improvements: 'Adding plant health monitoring with AI-powered disease detection and social features for gardening community building.'
   },
   {
     id: 3,
-    title: 'Social Media Dashboard',
-    image: 'https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=800&q=80',
-    tech: ['React', 'D3.js', 'Express', 'MySQL', 'Socket.io'],
-    description: 'Analytics dashboard for social media managers to track engagement, schedule posts, and analyze performance metrics.',
-    liveDemo: 'https://example-dashboard.com',
-    github: 'https://github.com/yourusername/dashboard',
-    challenges: 'Creating interactive data visualizations and handling large datasets efficiently.',
-    improvements: 'Integration with more social platforms and predictive analytics features.'
+    title: 'MARATHON MANIA',
+    image: 'https://i.ibb.co/5xrhrRQT/Marathon-Mania.png',
+    tech: ['React', 'Firebase', 'JavaScript', 'CSS3', 'Node.js'],
+    description: 'Complete marathon event management platform for organizers and participants with training resources. Features event creation, participant registration, and training material subscription service.',
+    liveDemo: 'https://marathonmania-6aea4.web.app/',
+    github: 'https://github.com/sohanrahat/MarathonMania',
+    challenges: 'Building a scalable event management system that handles both organizer and participant workflows while providing comprehensive training resources.',
+    improvements: 'Adding real-time race tracking, mobile app development, and integration with wearable devices for training analytics.'
   }
 ];
 
