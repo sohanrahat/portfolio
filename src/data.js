@@ -2,7 +2,9 @@ import {
   SiReact, SiTailwindcss, SiHtml5, SiCss3,
   SiNextdotjs, SiNodedotjs, SiExpress, SiMongodb,
   SiVercel, SiFigma, SiGooglegemini,
-  SiAdobeillustrator
+  SiAdobeillustrator,
+  SiWordpress,
+  SiElementor
 } from 'react-icons/si';
 import { DiGithubBadge, DiJavascript } from 'react-icons/di';
 import { RiClaudeLine } from 'react-icons/ri';
@@ -35,6 +37,8 @@ export const skills = {
     { name: 'Figma', icon: SiFigma, color: 'text-orange-500' },
     { name: 'Gemini', icon: SiGooglegemini, color: 'text-blue-500' },
     { name: 'Claude', icon: RiClaudeLine, color: 'text-[#C15F3C]' },
+    { name: 'WordPress', icon: SiWordpress, color: 'text-blue-700' },
+    { name: 'Elementor', icon: SiElementor, color: 'text-pink-500' },
   ]
 };
 
